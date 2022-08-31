@@ -12,7 +12,7 @@
 
 This is the repo for the [ethereum.org](https://ethereum.org) website, a resource for the Ethereum community. The purpose of the site is to _“Be the best portal to Ethereum for our growing global community"_ - read more about what this means [here](https://ethereum.org/en/about/).
 
-[ethereum.org](https://ethereum.org) is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to managing its evolution. If you’re interested in helping to improve [ethereum.org](https://ethereum.org), find out [how to contribute](https://ethereum.org/en/contributing/).
+[ethereum.org](https://ethereum.org) is improved and changed over time through the contributions of community members who submit content, give feedback, or volunteer their time to manage its evolution. If you’re interested in helping to improve [ethereum.org](https://ethereum.org), find out [how to contribute](https://ethereum.org/en/contributing/).
 
 ## Looking for the Ethereum blockchain's code?
 
@@ -80,7 +80,7 @@ $ yarn
 
 ### 4. Make awesome changes!
 
-1. Create new branch for your changes
+1. Create a new branch for your changes
 
 ```sh
 $ git checkout -b new_branch_name
@@ -97,9 +97,9 @@ $ yarn start
   - Explore scripts within `package.json` for more build options
   - Get **faster** local builds by building only one language. E.g. in your `.env` file, set `GATSBY_BUILD_LANGS=en` to build the content only in English
 
-By default the script will build all the languages (complete list in `data/translations.json`) and will ignore the `/docs` and `/tutorials` folders. To control this behavior you can play with the `GATSBY_BUILD_LANGS` and `IGNORE_CONTENT` env variables. Check out `.env.example` to read more about them.
+By default, the script will build all the languages (complete list in `data/translations.json`) and will ignore the `/docs` and `/tutorials` folders. To control this behavior you can play with the `GATSBY_BUILD_LANGS` and `IGNORE_CONTENT` env variables. Check out `.env.example` to read more about them.
 
-3. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)).
+3. Commit and prepare for the pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)).
 
 ```sh
 $ git commit -m "brief description of changes [Fixes #1234]"
@@ -113,14 +113,14 @@ $ git push
 
 ### 5. Local development with lambda functions
 
-There may be times where you develop features that make external API requests to other services. For these we write lambda functions to obfuscate API keys.
+There may be times when you develop features that make external API requests to other services. For these, we write lambda functions to obfuscate API keys.
 
 To use an existing function locally you don't need to do anything. Just check that you have set the necessary ENV variables in the `.env` file.
 
 To create a new function, you will need to create two files:
 
 - One in `src/lambdas` where the logic will live. These are the ones that will be deployed to Netlify. These functions follow [this format](https://docs.netlify.com/functions/build-with-javascript/#synchronous-function-format).
-- One in `src/api` that will be just a wrapper around the previous one in order to be compatible with Gatsby functions. More on the [Gatbsy docs](https://www.gatsbyjs.com/docs/reference/functions/getting-started/) for the format they follow.
+- One in `src/api` that will be just a wrapper around the previous one to be compatible with Gatsby functions. More on the [Gatbsy docs](https://www.gatsbyjs.com/docs/reference/functions/getting-started/) for the format they follow.
 
 Typically, you will develop and test functions in the Gatsby context, by running `yarn start`.
 
@@ -146,7 +146,7 @@ In case you want to test them as if you were in a Netlify env, you can install t
 
 - `master` is continually synced to Netlify and will automatically deploy new commits to ethereum.org
 - The [website team](https://ethereum.org/en/contributing/#how-decisions-about-the-site-are-made) will periodically merge `dev` into `master` (typically multiple times per week)
-- You can [view the history of releases](https://github.com/ethereum/ethereum-org-website/releases), which include PR highlights
+- You can [view the history of releases](https://github.com/ethereum/ethereum-org-website/releases), which includes PR highlights
 
 <hr style="margin-top: 3em; margin-bottom: 3em;">
 
@@ -167,7 +167,7 @@ In case you want to test them as if you were in a Netlify env, you can install t
 
 - 👆 To claim your Contributor POAP, join our Discord server and paste a link to your contribution in the `#🥇 | poaps` [channel](https://discord.com/channels/714888181740339261/804005643211898911)
 
-- A member of our team will verify the request and DM you with a personalized link to claim your own freshly minted POAP collectible!
+- A member of our team will verify the request and DM you with a personalized link to claim your own freshly minted POAP collectable!
 
 - To help with verification we request GitHub contributors connect their GitHub account with their Discord account (Discord > Settings > Connections > GitHub). Crowdin contributors will be verified directly through Crowdin by our team.
 
@@ -177,7 +177,7 @@ In case you want to test them as if you were in a Netlify env, you can install t
 
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks go to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -1369,7 +1369,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
 ### Join our Discord server
 
